@@ -1,3 +1,8 @@
-export default function Home() {
-  return <h1>Hello World!</h1>;
-}
+import type { NextPage } from "next";
+import Home from "@/containers/home";
+
+const HomePage: NextPage = () => {
+  return <Home />;
+};
+
+export default HomePage;
