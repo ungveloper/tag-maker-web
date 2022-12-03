@@ -1,7 +1,8 @@
+import { useRecoilValue } from "recoil";
 import { ThemeProvider } from "@emotion/react";
+import { themeAtom } from "@/recoils/stats";
 import { darkTheme, lightTheme } from "@/styles/themes";
 import { EmotionGlobal } from "./globals";
-import { useState } from "react";
 
 type EmotionProviderProps = {
   children: JSX.Element | JSX.Element[];
@@ -9,19 +10,12 @@ type EmotionProviderProps = {
 
 export function EmotionProvider(props: EmotionProviderProps): JSX.Element {
   const { children } = props;
-  const [isDark, setIsDark] = useState<boolean>(false);
-
-  const handleOnClick = () => {
-    setIsDark((prev) => !prev);
-  };
+  const theme = useRecoilValue(themeAtom);
 
   return (
-    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme.isDark ? darkTheme : lightTheme}>
       <EmotionGlobal />
       {children}
-      <button onClick={handleOnClick}>
-        {isDark ? "lightTheme" : "darkTheme"}
-      </button>
     </ThemeProvider>
   );
 }
