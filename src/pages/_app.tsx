@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
-import { appWithTranslation } from "next-i18next";
+import Head from "next/head";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import { RecoilRoot } from "recoil";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { createEmotionCache } from "@/utils/emotion";
@@ -12,9 +13,17 @@ interface IMyAppProps extends AppProps {
 }
 export function MyApp(props: IMyAppProps) {
   const { Component, emotionCache = createEmotionCache(), pageProps } = props;
+  const { t } = useTranslation(["common"]);
   return (
     <RecoilRoot>
       <CacheProvider value={emotionCache}>
+        <Head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content={t("description")!} />
+          <meta httpEquiv="X-UA-Compatible" content="chrome=1" />
+          <title>{t("title")}</title>
+        </Head>
         <EmotionProvider>
           <Component {...pageProps} />
           <ToastContainer

@@ -1,4 +1,3 @@
-import { useTranslation } from "next-i18next";
 import { memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
@@ -7,7 +6,6 @@ import { toast } from "react-toastify";
 import { Title } from "./styles";
 
 function Home(): JSX.Element {
-  const { t } = useTranslation("common");
   const [theme, setTheme] = useRecoilState(themeAtom);
 
   const handleOnClick = useCallback(() => {
@@ -27,7 +25,7 @@ function Home(): JSX.Element {
 
   return (
     <>
-      <Title>{t("title")}</Title>
+      <Title>Hello World!</Title>
       <button onClick={handleOnClick}>
         {theme.isDark ? "lightTheme" : "darkTheme"}
       </button>
