@@ -4,6 +4,8 @@ import { RecoilRoot } from "recoil";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { createEmotionCache } from "@/utils/emotion";
 import { EmotionProvider } from "@/providers/emotion";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IMyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -15,6 +17,18 @@ export function MyApp(props: IMyAppProps) {
       <CacheProvider value={emotionCache}>
         <EmotionProvider>
           <Component {...pageProps} />
+          <ToastContainer
+            position="bottom-center"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover={false}
+            theme="light"
+          />
         </EmotionProvider>
       </CacheProvider>
     </RecoilRoot>

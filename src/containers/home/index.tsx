@@ -3,6 +3,7 @@ import { memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
 import { themeAtom } from "@/recoils/stats";
+import { toast } from "react-toastify";
 import { Title } from "./styles";
 
 function Home(): JSX.Element {
@@ -18,7 +19,9 @@ function Home(): JSX.Element {
         };
       });
     } catch (e) {
-      console.error("에러 발생");
+      toast.error("에러 발생");
+    } finally {
+      toast.success("테마 변경 완료");
     }
   }, []);
 
