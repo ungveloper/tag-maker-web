@@ -3,6 +3,7 @@ import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
 import { themeAtom } from "@/recoils/stats";
 import { toast } from "react-toastify";
+import BaseLayout from "@/layouts/base";
 import { Title } from "./styles";
 
 function Home(): JSX.Element {
@@ -24,12 +25,12 @@ function Home(): JSX.Element {
   }, []);
 
   return (
-    <>
+    <BaseLayout>
       <Title>Hello World!</Title>
       <button onClick={handleOnClick}>
         {theme.isDark ? "lightTheme" : "darkTheme"}
       </button>
-    </>
+    </BaseLayout>
   );
 }
 
