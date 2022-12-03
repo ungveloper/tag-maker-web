@@ -1,10 +1,12 @@
+const withInterceptStdout = require("next-intercept-stdout");
 const { i18n } = require("./next-i18next.config");
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  i18n,
-  reactStrictMode: true,
-  swcMinify: true,
-};
-
-module.exports = nextConfig;
+module.exports = withInterceptStdout(
+  {
+    i18n,
+    reactStrictMode: true,
+    swcMinify: true,
+  },
+  (text) => (text.includes("Duplicate atom key") ? "" : text)
+);
