@@ -1,4 +1,16 @@
 export const palette = {
-  white: "#FFFFFF",
-  black: "#000000",
+  darkPrimary: "#1D203B",
+  lightPrimary: "#F3F3F5",
+  purpleDark: "#35205C",
+  purple: "#9F73EF",
+  purpleLight: "#E2D9F3",
+  white: "#FEFDFD",
+  white5: "rgba(254, 253, 253, .05)",
+  white10: "rgba(254, 253, 253, .1)",
+  white70: "rgba(254, 253, 253, .7)",
+  black: "#26292D",
+  black10: "rgba(38, 41, 45, .1)",
+  black70: "rgba(38, 41, 45, .7)",
+  error: "#DC3545",
+  success: "#2CC06D",
 };

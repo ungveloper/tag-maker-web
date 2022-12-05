@@ -1,11 +1,14 @@
 import { memo } from "react";
 import isEqual from "react-fast-compare";
-import { Wrapper } from "./styles";
+import { Container, Wrapper } from "./styles";
 
 function Footer(): JSX.Element {
   return (
     <Wrapper>
-      <h1>Footer</h1>
+      <Container>
+        <h1>logo</h1>
+        <h1>items</h1>
+      </Container>
     </Wrapper>
   );
 }
