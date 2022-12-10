@@ -6,5 +6,6 @@
   "toolsToggleHashRemoveTitle": "Remove",
   "toolsLineCuttingTitle": "Line Cutting",
   "optionsRemoveSpecialCharsTitle": "Remove Special Characters",
-  "optionsClearTitle": "Clear"
+  "optionsClearTitle": "Clear",
+  "copyButtonTitle": "Copy"
 }
