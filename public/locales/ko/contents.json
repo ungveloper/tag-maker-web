@@ -1,5 +1,7 @@
 {
   "placeholder": "태그를 입력해주세요.",
   "tellerLinesTitle": "줄",
-  "tellerCharactersTitle": "자"
+  "tellerCharactersTitle": "자",
+  "toolsToggleHashAddTitle": "추가",
+  "toolsToggleHashRemoveTitle": "제거"
 }
