@@ -9,11 +9,7 @@ const HomePage: NextPage = () => {
 export const getServerSideProps: GetServerSideProps = async (props) => {
   return {
     props: {
-      ...(await serverSideTranslations(props.locale!, [
-        "common",
-        "navBar",
-        "contents",
-      ])),
+      ...(await serverSideTranslations(props.locale!, ["common", "contents"])),
     },
   };
 };
