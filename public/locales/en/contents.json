@@ -4,5 +4,6 @@
   "tellerCharactersTitle": "Characters",
   "toolsToggleHashAddTitle": "Add",
   "toolsToggleHashRemoveTitle": "Remove",
-  "toolsLineCuttingTitle": "Line Cutting"
+  "toolsLineCuttingTitle": "Line Cutting",
+  "optionsRemoveSpecialCharsTitle": "Remove Special Characters"
 }

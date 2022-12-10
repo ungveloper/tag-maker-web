@@ -4,5 +4,6 @@
   "tellerCharactersTitle": "자",
   "toolsToggleHashAddTitle": "추가",
   "toolsToggleHashRemoveTitle": "제거",
-  "toolsLineCuttingTitle": "줄로 자르기"
+  "toolsLineCuttingTitle": "줄로 자르기",
+  "optionsRemoveSpecialCharsTitle": "특수문자 제거"
 }
