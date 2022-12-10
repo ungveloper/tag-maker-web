@@ -11,4 +11,51 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
+
+export const IconsWrapper = styled.div`
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+`;
+
+export const SvgLogoSymbol = styled.svg`
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: none;
+
+  rect {
+    width: 100%;
+    height: 100%;
+    fill: ${(props) => props.theme.textColor};
+  }
+
+  path {
+    fill: ${(props) => props.theme.bgColor};
+  }
+`;
+
+export const SvgLogoTypography = styled.svg`
+  width: 8.5rem;
+  height: 1.4rem;
+  fill: none;
+
+  path {
+    fill: ${(props) => props.theme.textColor};
+  }
+`;
+
+const FooterIcons = styled.svg`
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: none;
+
+  path {
+    fill: ${(props) => props.theme.textColor};
+  }
+`;
+
+export const SvgLinkedin = styled(FooterIcons)``;
+
+export const SvgGithub = styled(FooterIcons)``;
