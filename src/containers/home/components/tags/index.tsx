@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import { ChangeEvent, memo } from "react";
+import { ChangeEvent, memo, useEffect, useRef } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
 import { tagsAtom } from "./stats";
@@ -7,6 +7,7 @@ import { tagsAtom } from "./stats";
 function Tags(): JSX.Element {
   const { t } = useTranslation(["contents"]);
   const [text, setText] = useRecoilState(tagsAtom);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   const handleOnChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     const {
@@ -15,8 +16,13 @@ function Tags(): JSX.Element {
     setText(value);
   };
 
+  useEffect(() => {
+    textareaRef.current?.focus();
+  }, [text]);
+
   return (
     <textarea
+      ref={textareaRef}
       placeholder={t("placeholder")!}
       onChange={handleOnChange}
       value={text}
