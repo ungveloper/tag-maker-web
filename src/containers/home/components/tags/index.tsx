@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 import { tagsAtom } from "./stats";
 
 function Tags(): JSX.Element {
-  const { t } = useTranslation(["textarea"]);
+  const { t } = useTranslation(["contents"]);
   const [text, setText] = useRecoilState(tagsAtom);
 
   const handleOnChange = (event: ChangeEvent<HTMLTextAreaElement>) => {

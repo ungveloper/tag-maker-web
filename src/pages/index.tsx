@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async (props) => {
       ...(await serverSideTranslations(props.locale!, [
         "common",
         "navBar",
-        "textarea",
+        "contents",
       ])),
     },
   };

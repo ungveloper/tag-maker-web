@@ -12,3 +12,16 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const FlexBoxWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const FlexBox = styled.div`
+  display: flex;
+  gap: 0.8rem;
+`;
+
+export const Lines = styled.div``;
+export const Characters = styled.div``;
