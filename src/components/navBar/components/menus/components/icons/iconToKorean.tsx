@@ -2,7 +2,7 @@ import { memo } from "react";
 import isEqual from "react-fast-compare";
 import { SvgToKorean } from "../../styles";
 
-function IconToKorean() {
+function IconToKorean(): JSX.Element {
   return (
     <SvgToKorean viewBox="0 0 25 24">
       <g fill="none" fillRule="evenodd">

@@ -2,7 +2,7 @@ import { memo } from "react";
 import isEqual from "react-fast-compare";
 import { SvgToDarkTheme } from "../../styles";
 
-function IconToDarkTheme() {
+function IconToDarkTheme(): JSX.Element {
   return (
     <SvgToDarkTheme viewBox="0 0 24 24">
       <g fill="none" fillRule="evenodd" strokeLinejoin="round">

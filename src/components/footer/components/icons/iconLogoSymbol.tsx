@@ -2,7 +2,7 @@ import { memo } from "react";
 import isEqual from "react-fast-compare";
 import { SvgLogoSymbol } from "../../styles";
 
-function IconLogoSymbol() {
+function IconLogoSymbol(): JSX.Element {
   return (
     <SvgLogoSymbol viewBox="0 0 24 24">
       <rect />

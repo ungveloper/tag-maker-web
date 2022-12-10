@@ -4,7 +4,7 @@ import isEqual from "react-fast-compare";
 import ButtonRemoveSpecialChars from "./components/buttonRemoveSpecialChars";
 import ButtonClear from "./components/buttonClear";
 
-function Options() {
+function Options(): JSX.Element {
   return (
     <FlexBox>
       <ButtonRemoveSpecialChars />

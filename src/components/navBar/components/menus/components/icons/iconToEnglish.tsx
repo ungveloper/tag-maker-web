@@ -2,7 +2,7 @@ import { memo } from "react";
 import isEqual from "react-fast-compare";
 import { SvgToEnglish } from "../../styles";
 
-function IconToEnglish() {
+function IconToEnglish(): JSX.Element {
   return (
     <SvgToEnglish viewBox="0 0 24 24">
       <g fill="none" fillRule="evenodd">

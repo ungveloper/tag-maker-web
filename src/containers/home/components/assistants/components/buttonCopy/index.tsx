@@ -5,7 +5,7 @@ import { useRecoilValue } from "recoil";
 import { tagsAtom } from "../../../tags/stats";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function ButtonCopy() {
+function ButtonCopy(): JSX.Element {
   const { t } = useTranslation(["contents"]);
   const text = useRecoilValue(tagsAtom);
 
