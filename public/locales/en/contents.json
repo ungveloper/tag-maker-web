@@ -3,5 +3,6 @@
   "tellerLinesTitle": "lines",
   "tellerCharactersTitle": "Characters",
   "toolsToggleHashAddTitle": "Add",
-  "toolsToggleHashRemoveTitle": "Remove"
+  "toolsToggleHashRemoveTitle": "Remove",
+  "toolsLineCuttingTitle": "Line Cutting"
 }
