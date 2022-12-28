@@ -8,5 +8,8 @@ module.exports = withInterceptStdout(
     reactStrictMode: true,
     swcMinify: true,
   },
-  (text) => (text.includes("Duplicate atom key") ? "" : text)
+  (text) =>
+    text.includes("Duplicate atom key") || text.includes("Do not add <script>")
+      ? ""
+      : text
 );
