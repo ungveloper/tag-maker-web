@@ -18,10 +18,8 @@ export function MyApp(props: IMyAppProps) {
     <RecoilRoot>
       <CacheProvider value={emotionCache}>
         <Head>
-          <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content={t("description")!} />
-          <meta httpEquiv="X-UA-Compatible" content="chrome=1" />
           <title>{t("title")}</title>
         </Head>
         <EmotionProvider>
