@@ -7,7 +7,7 @@ export const globalStyles = (theme: Theme) => {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Pretendard", serif;
+      font-family: "Pretendard", sans-serif;
       -webkit-tap-highlight-color: transparent;
       -webkit-user-drag: none;
     }
