@@ -7,5 +7,7 @@
   "toolsLineCuttingTitle": "Line Cutting",
   "optionsRemoveSpecialCharsTitle": "Remove Special Characters",
   "optionsClearTitle": "Clear",
-  "copyButtonTitle": "Copy"
+  "copyButtonTitle": "Copy",
+  "cancelButtonTitle": "Cancel",
+  "okButtonTitle": "OK"
 }

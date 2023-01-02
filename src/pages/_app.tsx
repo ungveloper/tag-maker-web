@@ -7,6 +7,7 @@ import { RecoilRoot } from "recoil";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import { createEmotionCache } from "@/utils/emotion";
 import { EmotionProvider } from "@/providers/emotion";
+import CustomModal from "@/components/modal";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -30,6 +31,7 @@ export function MyApp(props: IMyAppProps) {
           </Head>
           <EmotionProvider>
             <Component {...pageProps} />
+            <CustomModal />
             <ToastContainer
               position="bottom-center"
               autoClose={3000}

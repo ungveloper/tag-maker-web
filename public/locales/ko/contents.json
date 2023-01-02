@@ -7,5 +7,7 @@
   "toolsLineCuttingTitle": "줄로 자르기",
   "optionsRemoveSpecialCharsTitle": "특수문자 제거",
   "optionsClearTitle": "모두 비우기",
-  "copyButtonTitle": "전체 복사하기"
+  "copyButtonTitle": "전체 복사하기",
+  "cancelButtonTitle": "닫기",
+  "okButtonTitle": "적용하기"
 }
