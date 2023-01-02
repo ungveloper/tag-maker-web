@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { appWithTranslation, useTranslation } from "next-i18next";
+import nextI18nextConfig from "next-i18next.config";
 import { GoogleAnalyticsProvider } from "@/providers/googleAnalytics";
 import { RecoilRoot } from "recoil";
 import { CacheProvider, EmotionCache } from "@emotion/react";
@@ -48,4 +49,4 @@ export function MyApp(props: IMyAppProps) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18nextConfig);
