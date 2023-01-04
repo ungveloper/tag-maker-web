@@ -1,13 +1,17 @@
 {
-  "placeholder": "Please enter your tags.",
+  "tagsPlaceholder": "Please enter your tags.",
   "tellerLinesTitle": "lines",
   "tellerCharactersTitle": "Characters",
   "toolsToggleHashAddTitle": "Add",
   "toolsToggleHashRemoveTitle": "Remove",
-  "toolsLineCuttingTitle": "Line Cutting",
+  "toolsLineCutTitle": "Cut a line",
+  "toolsLineCutDesc": "Please enter the number of line to cut.",
   "optionsRemoveSpecialCharsTitle": "Remove Special Characters",
   "optionsClearTitle": "Clear",
   "copyButtonTitle": "Copy",
   "cancelButtonTitle": "Cancel",
-  "okButtonTitle": "OK"
+  "okButtonTitle": "OK",
+  "errorMessage": "error.",
+  "successMessage": "done.",
+  "copyMessage": "done."
 }

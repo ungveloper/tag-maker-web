@@ -29,35 +29,35 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const ModalContent = styled.div`
-  padding: 2.4rem;
-`;
-
-export const ModalTitle = styled.h1``;
-
 type ModalItem = {
   $isSelected: boolean;
 };
 export const ModalItem = styled.div<ModalItem>`
   display: ${(props) => (props.$isSelected ? "flex" : "none")};
+  flex-direction: column;
 `;
 
-export const ModalOption = styled.div`
-  display: flex;
-  border-top: 1px solid #eeeeee;
-`;
-
-const ModalButton = styled.button`
+export const InitModalButton = styled.button`
   padding: 1.2rem 0;
   flex: 1;
-  border-right: 1px solid #eeeeee;
   text-align: center;
-
-  &:last-child {
-    border-right: unset;
-  }
 `;
 
-export const ModalCancel = styled(ModalButton)``;
+export const ModalHeader = styled.div`
+  margin-top: 2.4rem;
+  padding: 0 2.4rem;
+`;
 
-export const ModalConfirm = styled(ModalButton)``;
+export const ModalBody = styled.div`
+  padding: 0 2.4rem;
+`;
+
+export const ModalFooter = styled.div`
+  margin-top: 2.4rem;
+  display: flex;
+  border-top: 0.1rem solid #eeeeee;
+
+  * {
+    flex: 1;
+  }
+`;

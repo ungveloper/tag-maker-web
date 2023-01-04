@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import { ChangeEvent, memo, useEffect, useRef } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
-import { tagsAtom } from "./stats";
+import { tagsAtom } from "@/containers/home/components/tags/stats";
 
 function Tags(): JSX.Element {
   const { t } = useTranslation(["contents"]);
@@ -18,7 +18,7 @@ function Tags(): JSX.Element {
 
   useEffect(() => {
     textareaRef.current?.focus();
-  }, [text]);
+  }, []);
 
   return (
     <textarea

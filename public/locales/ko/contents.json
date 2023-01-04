@@ -4,10 +4,14 @@
   "tellerCharactersTitle": "자",
   "toolsToggleHashAddTitle": "추가",
   "toolsToggleHashRemoveTitle": "제거",
-  "toolsLineCuttingTitle": "줄로 자르기",
+  "toolsLineCutTitle": "라인 자르기",
+  "toolsLineCutDesc": "잘라낼 라인 수를 입력해주세요.",
   "optionsRemoveSpecialCharsTitle": "특수문자 제거",
   "optionsClearTitle": "모두 비우기",
   "copyButtonTitle": "전체 복사하기",
   "cancelButtonTitle": "닫기",
-  "okButtonTitle": "적용하기"
+  "okButtonTitle": "적용하기",
+  "errorMessage": "에러 발생.",
+  "successMessage": "적용이 완료되었습니다.",
+  "copyMessage": "복사가 완료되었습니다."
 }

@@ -2,25 +2,22 @@ import { useTranslation } from "next-i18next";
 import { memo } from "react";
 import isEqual from "react-fast-compare";
 import { useSetRecoilState } from "recoil";
-import { tagsAtom } from "@/containers/home/components/tags/stats";
-
-const ROW_MAX_LENGTH = 30;
+import { modalAtom } from "@/components/modal/stats";
 
 function ButtonLineCutting(): JSX.Element {
   const { t } = useTranslation(["contents"]);
-  const setText = useSetRecoilState(tagsAtom);
+  const setModalState = useSetRecoilState(modalAtom);
 
-  const handleChangeOnClick = () => {
-    setText((prev) =>
-      prev.split("\n").splice(0, ROW_MAX_LENGTH).join().replaceAll(",", "\n")
-    );
+  const handleOnClick = () => {
+    setModalState({
+      isOpen: true,
+      selectedModal: "modalLineCutting",
+    });
   };
 
   return (
-    <button onClick={handleChangeOnClick}>
-      <h1>
-        {ROW_MAX_LENGTH} {t("toolsLineCuttingTitle")}
-      </h1>
+    <button onClick={handleOnClick}>
+      <h1>{t("toolsLineCutTitle")}</h1>
     </button>
   );
 }
