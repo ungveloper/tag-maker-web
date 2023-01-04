@@ -6,7 +6,7 @@ import ButtonCopy from "./components/buttonCopy";
 
 function Assistants(): JSX.Element {
   return (
-    <FlexBoxWrapper>
+    <FlexBoxWrapper $isBorderTop>
       <Options />
       <ButtonCopy />
     </FlexBoxWrapper>

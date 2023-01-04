@@ -34,7 +34,7 @@ export function MyApp(props: IMyAppProps) {
             <CustomModal />
             <ToastContainer
               position="bottom-center"
-              autoClose={3000}
+              autoClose={2000}
               hideProgressBar={false}
               newestOnTop={false}
               closeOnClick

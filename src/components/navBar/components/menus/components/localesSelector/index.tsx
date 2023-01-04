@@ -2,10 +2,10 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { memo, useState } from "react";
 import isEqual from "react-fast-compare";
-import { toast } from "react-toastify";
 import { SwitchingButton } from "../../styles";
 import IconToKorean from "../icons/iconToKorean";
 import IconToEnglish from "../icons/iconToEnglish";
+import { toast } from "react-toastify";
 
 function LocalesSelector(): JSX.Element {
   const { t } = useTranslation("contents");

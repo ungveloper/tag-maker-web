@@ -5,10 +5,10 @@ import { useRecoilState, useSetRecoilState } from "recoil";
 import { modalAtom } from "@/components/modal/stats";
 import { tagsAtom } from "@/containers/home/components/tags/stats";
 import { linesAtom } from "@/components/modal/components/modalLineCutting/stats";
-import { toast } from "react-toastify";
 import { ModalBody, ModalFooter, ModalHeader } from "../../styles";
 import ButtonModalClose from "../buttonModalClose";
 import ButtonModalConfirm from "../buttonModalConfirm";
+import { toast } from "react-toastify";
 
 function ModalLineCutting(): JSX.Element {
   const { t } = useTranslation("contents");

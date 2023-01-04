@@ -59,6 +59,7 @@ export const globalStyles = (theme: Theme) => {
       outline: none;
       border: none;
       resize: none;
+      background: unset;
     }
     ul {
       list-style: none;

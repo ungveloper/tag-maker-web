@@ -3,10 +3,10 @@ import { memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
 import { themeAtom } from "@/recoils/stats";
-import { toast } from "react-toastify";
 import { SwitchingButton } from "../../styles";
 import IconToLightTheme from "../icons/iconToLightTheme";
 import IconToDarkTheme from "../icons/iconToDarkTheme";
+import { toast } from "react-toastify";
 
 function ThemeSelector(): JSX.Element {
   const { t } = useTranslation("contents");

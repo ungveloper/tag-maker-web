@@ -3,6 +3,7 @@ import { ChangeEvent, memo, useEffect, useRef } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
 import { tagsAtom } from "@/containers/home/components/tags/stats";
+import { Textarea } from "./styles";
 
 function Tags(): JSX.Element {
   const { t } = useTranslation(["contents"]);
@@ -21,7 +22,7 @@ function Tags(): JSX.Element {
   }, []);
 
   return (
-    <textarea
+    <Textarea
       ref={textareaRef}
       placeholder={t("placeholder")!}
       onChange={handleOnChange}
