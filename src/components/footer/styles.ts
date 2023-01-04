@@ -4,6 +4,8 @@ import { CONTAINER_MAX_WIDTH } from "@/styles/variables";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  height: 6.4rem;
+  box-shadow: 0 -1.6rem 1.6rem ${(props) => props.theme.shadowColor};
 `;
 
 export const Container = styled.div`
@@ -22,7 +24,7 @@ export const IconsWrapper = styled.div`
 
 export const SvgLogoSymbol = styled.svg`
   width: 2.4rem;
-  height: 2.4rem;
+  aspect-ratio: 1 / 1;
   fill: none;
 
   rect {
@@ -38,7 +40,7 @@ export const SvgLogoSymbol = styled.svg`
 
 export const SvgLogoTypography = styled.svg`
   width: 8.5rem;
-  height: 1.4rem;
+  aspect-ratio: 6.071 / 1;
   fill: none;
 
   path {
@@ -48,7 +50,7 @@ export const SvgLogoTypography = styled.svg`
 
 const FooterIcons = styled.svg`
   width: 2.4rem;
-  height: 2.4rem;
+  aspect-ratio: 1 / 1;
   fill: none;
 
   path {
