@@ -24,7 +24,7 @@ function Tags(): JSX.Element {
   return (
     <Textarea
       ref={textareaRef}
-      placeholder={t("placeholder")!}
+      placeholder={t("tagsPlaceholder")!}
       onChange={handleOnChange}
       value={text}
     />
