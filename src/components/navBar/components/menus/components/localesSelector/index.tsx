@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { memo, useState } from "react";
 import isEqual from "react-fast-compare";
@@ -7,6 +8,7 @@ import IconToKorean from "../icons/iconToKorean";
 import IconToEnglish from "../icons/iconToEnglish";
 
 function LocalesSelector(): JSX.Element {
+  const { t } = useTranslation("contents");
   const router = useRouter();
   const [isEnglish, setIsEnglish] = useState<boolean>(
     router.locale === "en" ? true : false
@@ -19,9 +21,9 @@ function LocalesSelector(): JSX.Element {
       });
       setIsEnglish((prev) => !prev);
     } catch (e) {
-      toast.error("에러 발생.");
+      toast.error(t("errorMessage") + e);
     } finally {
-      toast.success("완료");
+      toast.success(t("successMessage"));
     }
   };
 

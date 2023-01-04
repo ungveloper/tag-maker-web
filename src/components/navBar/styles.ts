@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   height: 6.4rem;
+  box-shadow: 0 0 0.8rem ${(props) => props.theme.shadowColor};
 `;
 
 export const Container = styled.div`

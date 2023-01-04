@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { memo, useCallback } from "react";
 import isEqual from "react-fast-compare";
 import { useRecoilState } from "recoil";
@@ -8,6 +9,7 @@ import IconToLightTheme from "../icons/iconToLightTheme";
 import IconToDarkTheme from "../icons/iconToDarkTheme";
 
 function ThemeSelector(): JSX.Element {
+  const { t } = useTranslation("contents");
   const [theme, setTheme] = useRecoilState(themeAtom);
 
   const handleOnClick = useCallback(() => {
@@ -19,7 +21,9 @@ function ThemeSelector(): JSX.Element {
         };
       });
     } catch (e) {
-      toast.error("에러 발생.");
+      toast.error(t("errorMessage") + e);
+    } finally {
+      toast.success(t("successMessage"));
     }
   }, []);
 

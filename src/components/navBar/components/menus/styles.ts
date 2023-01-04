@@ -16,7 +16,7 @@ export const SwitchingButton = styled.button`
 const NavbarIcons = styled.svg`
   position: relative;
   width: ${DEFALUT_ICON_SIZE};
-  height: ${DEFALUT_ICON_SIZE};
+  aspect-ratio: 1 / 1;
 
   path {
     stroke: ${(props) => props.theme.pathStrokeColor};
@@ -34,7 +34,9 @@ export const SvgToEnglish = styled(LocalesIcons)``;
 
 export const SvgToKorean = styled(LocalesIcons)``;
 
-export const SvgToDarkTheme = styled(ThemeIcons)``;
+export const SvgToDarkTheme = styled(ThemeIcons)`
+  top: -0.04rem;
+`;
 
 export const SvgToLightTheme = styled(ThemeIcons)`
   top: -0.08rem;
