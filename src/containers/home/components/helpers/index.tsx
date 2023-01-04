@@ -6,7 +6,7 @@ import Tools from "./components/tools";
 
 function Helpers(): JSX.Element {
   return (
-    <FlexBoxWrapper>
+    <FlexBoxWrapper $isBorderTop={false}>
       <Tellers />
       <Tools />
     </FlexBoxWrapper>
