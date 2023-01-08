@@ -26,6 +26,8 @@ function Tags(): JSX.Element {
       ref={textareaRef}
       placeholder={t("tagsPlaceholder")!}
       onChange={handleOnChange}
+      minRows={30}
+      maxRows={30}
       value={text}
     />
   );
