@@ -8,6 +8,10 @@ export const PointButton = styled.button`
   background-color: ${(props) => props.theme.pointBgColor};
   color: ${(props) => props.theme.pointTextColor};
 
+  &:hover {
+    background-color: ${(props) => props.theme.pointHoverBgColor};
+  }
+
   svg {
     width: 1.8rem;
     aspect-ratio: 1 / 1;

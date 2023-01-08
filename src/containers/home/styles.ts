@@ -39,7 +39,6 @@ export const InitOptionButton = styled.button`
   padding: 0.7rem 1.4rem;
   display: flex;
   gap: 0.6rem;
-  background-color: ${(props) => props.theme.boxBgColor};
   border: 0.1rem solid ${(props) => props.theme.borderColor};
   border-radius: 5.2rem;
   color: ${(props) => props.theme.disabledBoxTextColor};
