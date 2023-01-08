@@ -9,7 +9,7 @@ export const PointButton = styled.button`
   color: ${(props) => props.theme.pointTextColor};
 
   &:hover {
-    background-color: ${(props) => props.theme.pointHoverBgColor};
+    background-color: ${(props) => props.theme.pointBgColorHover};
   }
 
   svg {

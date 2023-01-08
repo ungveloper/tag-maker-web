@@ -30,7 +30,7 @@ export const SvgLogoSymbol = styled.svg`
   rect {
     width: 100%;
     height: 100%;
-    fill: ${(props) => props.theme.textColor};
+    fill: ${(props) => props.theme.pathStrokeColor};
   }
 
   path {
@@ -44,7 +44,7 @@ export const SvgLogoTypography = styled.svg`
   fill: none;
 
   path {
-    fill: ${(props) => props.theme.textColor};
+    fill: ${(props) => props.theme.pathStrokeColor};
   }
 `;
 
@@ -54,7 +54,7 @@ const FooterIcons = styled.svg`
   fill: none;
 
   path {
-    fill: ${(props) => props.theme.textColor};
+    fill: ${(props) => props.theme.pathStrokeColor};
   }
 `;
 

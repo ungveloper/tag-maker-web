@@ -57,12 +57,16 @@ function ModalLineCutting(): JSX.Element {
 
   useEffect(() => {
     inputRef.current?.select();
+    // eslint-disable-next-line
   }, [modalState.selectedModal === "modalLineCutting"]);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, [lineLength]);
 
   return (
     <>
       <ModalHeader>
-        <h1>{t("toolsLineCutTitle")}</h1>
         <p>{t("toolsLineCutDesc")}</p>
       </ModalHeader>
       <ModalBody>

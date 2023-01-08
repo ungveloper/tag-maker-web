@@ -12,7 +12,7 @@ export const Wrapper = styled.div<WrapperProps>`
   display: ${(props) => (props.$isOpen ? "flex" : "none")};
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: ${(props) => props.theme.modalWrapperBgColor};
 `;
 
 export const Container = styled.div`
@@ -24,8 +24,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.08);
+  background-color: ${(props) => props.theme.modalBgColor};
+  box-shadow: 0 0 0.8rem ${(props) => props.theme.shadowColor};
   overflow: hidden;
 `;
 
@@ -35,6 +35,8 @@ type ModalItem = {
 export const ModalItem = styled.div<ModalItem>`
   display: ${(props) => (props.$isSelected ? "flex" : "none")};
   flex-direction: column;
+  color: ${(props) => props.theme.modalTextColor};
+  font-size: 1.4rem;
 `;
 
 export const InitModalButton = styled.button`
@@ -49,13 +51,46 @@ export const ModalHeader = styled.div`
 `;
 
 export const ModalBody = styled.div`
+  margin-top: 1.2rem;
   padding: 0 2.4rem;
+  display: flex;
+
+  button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.8rem;
+    aspect-ratio: 1 / 1;
+    border: 0.1rem solid ${(props) => props.theme.borderColor};
+
+    &:first-of-type {
+      border-radius: 0.8rem 0 0 0.8rem;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    &:hover {
+      background-color: ${(props) => props.theme.shadowColor};
+    }
+  }
+
+  input {
+    flex: 1;
+    border: unset;
+    border-top: 0.1rem solid ${(props) => props.theme.borderColor};
+    border-bottom: 0.1rem solid ${(props) => props.theme.borderColor};
+    text-align: center;
+    font-size: 1.6rem;
+  }
 `;
 
 export const ModalFooter = styled.div`
   margin-top: 2.4rem;
   display: flex;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid ${(props) => props.theme.borderColor};
 
   * {
     flex: 1;

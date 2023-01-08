@@ -6,6 +6,6 @@ export const SvgLogo = styled.svg`
   fill: none;
 
   path {
-    fill: ${(props) => props.theme.textColor};
+    fill: ${(props) => props.theme.pathStrokeColor};
   }
 `;
