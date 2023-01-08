@@ -1,10 +1,15 @@
 import styled from "@emotion/styled";
-import { CONTAINER_MAX_WIDTH } from "@/styles/variables";
+import { breakPoints, CONTAINER_MAX_WIDTH } from "@/styles/variables";
 
 export const Wrapper = styled.div`
   margin: 3.6rem 0 5.2rem;
+  width: 100%;
   display: flex;
   justify-content: center;
+
+  @media ${breakPoints.mdDown} {
+    padding: 0 2rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -27,17 +32,27 @@ export const FlexBoxWrapper = styled.div<FlexBoxWrapperProps>`
   font-size: 1.4rem;
   border-top: ${(props) => (props.$isBorderTop ? "0.1rem" : "0")} solid
     ${(props) => props.theme.borderColor};
+
+  @media ${breakPoints.mdDown} {
+    margin-top: ${(props) => props.$isBorderTop && "-2rem"};
+    flex-direction: column;
+    gap: 1.2rem;
+    border-top: ${(props) => (!props.$isBorderTop ? "0.1rem" : "0")} solid
+      ${(props) => props.theme.borderColor};
+  }
 `;
 
 export const FlexBox = styled.div`
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.8rem;
 `;
 
 export const InitOptionButton = styled.button`
   padding: 0.7rem 1.4rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.6rem;
   border: 0.1rem solid ${(props) => props.theme.borderColor};
   border-radius: 5.2rem;

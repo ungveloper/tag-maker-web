@@ -1,3 +1,4 @@
+import { breakPoints } from "@/styles/variables";
 import styled from "@emotion/styled";
 
 type WrapperProps = {
@@ -19,7 +20,6 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   max-width: 72%;
-  min-width: 12%;
   max-height: 88%;
   display: flex;
   flex-direction: column;
@@ -79,6 +79,7 @@ export const ModalBody = styled.div`
 
   input {
     flex: 1;
+    width: 100%;
     border: unset;
     border-top: 0.1rem solid ${(props) => props.theme.borderColor};
     border-bottom: 0.1rem solid ${(props) => props.theme.borderColor};

@@ -1,8 +1,10 @@
+import { breakPoints } from "@/styles/variables";
 import styled from "@emotion/styled";
 
 export const PointButton = styled.button`
   padding: 1.2rem 1.6rem;
   display: flex;
+  justify-content: center;
   gap: 0.6rem;
   border-radius: 0.8rem;
   background-color: ${(props) => props.theme.pointBgColor};
@@ -20,5 +22,10 @@ export const PointButton = styled.button`
 
   path {
     fill: ${(props) => props.theme.pointTextColor};
+  }
+
+  @media ${breakPoints.mdDown} {
+    padding: 1.6rem;
+    margin-top: 1.2rem;
   }
 `;
